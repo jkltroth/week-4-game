@@ -110,7 +110,7 @@ $(".crystalButton").on("click", function () {
         wins++;
 
         // Updates winOrLoss id in html to display "You won!"
-        $("#winOrLoss").text("You won!");
+        alert("You won!");
 
         //Run the new game function
         newRound();
@@ -122,7 +122,7 @@ $(".crystalButton").on("click", function () {
         losses++;
 
         // Updates winOrLoss id in html to display "You lost..."
-        $("#winOrLoss").text("You lost...");
+        alert("You lost...");
 
         // Run the new game function
         newRound();

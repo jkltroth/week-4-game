@@ -9,78 +9,125 @@
 
     <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
 
+
     <!-- Latest compiled and minified CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 
-    <!-- Optional theme -->
+    <!-- Optional theme
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous"> -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-h21C2fcDk/eFsW9sC9h0dhokq5pDinLNklTKoxIZRUn3+hvmgQSffLLQ4G4l2eEr"
         crossorigin="anonymous">
 
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <div class="page-header">
-        <h1>Crystal Collector Challenge</h1>
-    </div>
+    <nav class="navbar navbar-default fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">James Roth</a>
+            </div>
+        </div>
+    </nav>
 
     <div class="container">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <p>Insert rules here...</p>
-            </div>
-        </div>
 
         <div class="panel panel-default">
             <div class="panel-body">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <p>Number to Guess:
-                            <span id="numberToGuess"></span>
-                        </p>
-                        <p>Your total score is:
-                            <span id="totalScore"></span>
-                        </p>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-header">
+                            <h1>Crystal Collector Challenge</h1>
+                        </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <p id=winOrLoss></p>
-                        <p>Wins:
-                            <span id="wins"></span>
-                        </p>
-                        <p>Losses:
-                            <span id="losses"></span>
-                        </p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Rules</h3>
+                            </div>
+                            <div class="panel-body rules">
+                                <p>At the start of each round, you will be given a random number. That number is your goal.</p>
+                                <p>There are four crystals below. Each crystal is worth a specific amount of points. By clicking
+                                    on a crystal, you will add its value to your total score.</p>
+                                <p>To win the game, match your total score to the goal. If your total score goes above the goal,
+                                    you lose.
+                                </p>
+                                <p>The value of each crystal is hidden from you until you click on it, and the values will be
+                                    changed with each new round.</p>
+                                <p>Good luck!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div>
+                                <div class="col-md-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body statsDiv">
+                                            <p>Goal:
+                                                <span id="numberToGuess"></span>
+                                            </p>
+                                            <p>Total Score:
+                                                <span id="totalScore"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body statsDiv">
+                                            <!-- <p id=winOrLoss></p> -->
+                                            <p>Wins:
+                                                <span id="wins"></span>
+                                            </p>
+                                            <p>Losses:
+                                                <span id="losses"></span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-body buttonDiv">
+                                        <button type="button" class="btn btn-default">
+                                            <img src="assets/images/redgem.png" id="crystal_1" class="crystalButton" alt="Red crystal icon">
+                                        </button>
+                                        <button type="button" class="btn btn-default">
+                                            <img src="assets/images/yellowgem.png" id="crystal_2" class="crystalButton" alt="Yellow crystal icon">
+                                        </button>
+                                        <button type="button" class="btn btn-default">
+                                            <img src="assets/images/bluegem.png" id="crystal_3" class="crystalButton" alt="Blue crystal icon">
+                                        </button>
+                                        <button type="button" class="btn btn-default">
+                                            <img src="assets/images/greengem.png" id="crystal_4" class="crystalButton" alt="Green crystal icon">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="panel panel-default">
-            <div class="panel-body">
-                    <button type="button" class="btn btn-default">
-                        <img src="assets/images/redgem.png" id="crystal_1" class="crystalButton" alt="Red crystal icon">
-                    </button>
-                    <button type="button" class="btn btn-default">
-                        <img src="assets/images/yellowgem.png" id="crystal_2" class="crystalButton" alt="Yellow crystal icon">
-                    </button>
-                    <button type="button" class="btn btn-default">
-                        <img src="assets/images/bluegem.png" id="crystal_3" class="crystalButton" alt="Blue crystal icon">
-                    </button>
-                    <button type="button" class="btn btn-default">
-                        <img src="assets/images/greengem.png" id="crystal_4" class="crystalButton" alt="Green crystal icon">
-                    </button>
-            </div>
-        </div>
-
     </div>
 
     <footer class="footer">
         <div class="container">
-            <span class="text-muted">&copy; Copyright 2017 James Roth</span>
+            <span>&copy; Copyright 2017 James Roth</span>
         </div>
     </footer>
 
