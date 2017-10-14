@@ -9,37 +9,85 @@
 
     <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
 
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+
 </head>
 
 <body>
 
-    <div>
-        <h1>Crystals Collector!</h1>
+    <div class="page-header">
+        <h1>Crystal Collector Challenge</h1>
     </div>
-    <div>
-        <p>Insert rules here...</p>
+
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <p>Insert rules here...</p>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p>Number to Guess:
+                            <span id="numberToGuess"></span>
+                        </p>
+                        <p>Your total score is:
+                            <span id="totalScore"></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <p id=winOrLoss></p>
+                        <p>Wins:
+                            <span id="wins"></span>
+                        </p>
+                        <p>Losses:
+                            <span id="losses"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+                    <button type="button" class="btn btn-default">
+                        <img src="assets/images/redgem.png" id="crystal_1" class="crystalButton" alt="Red crystal icon">
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        <img src="assets/images/yellowgem.png" id="crystal_2" class="crystalButton" alt="Yellow crystal icon">
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        <img src="assets/images/bluegem.png" id="crystal_3" class="crystalButton" alt="Blue crystal icon">
+                    </button>
+                    <button type="button" class="btn btn-default">
+                        <img src="assets/images/greengem.png" id="crystal_4" class="crystalButton" alt="Green crystal icon">
+                    </button>
+            </div>
+        </div>
+
     </div>
-    <div>
-        <p>Number to Guess: <span id="randomNumber"></span></p>
-    </div>
-    <div>
-        <p>"You won!" or "You lost!" go here..</p>
-        <p>Wins: <span id="wins" ></span></p>
-        <p>Losses: <span id="losses"></span></p>
-    </div>
-    <div>
-        <img src="assets/images/redgem.png" id="crystal_1" class="crystalButton" alt="Red crystal icon">
-        <img src="assets/images/yellowgem.png" id="crystal_2" class="crystalButton" alt="Yellow crystal icon">
-        <img src="assets/images/bluegem.png" id="crystal_3" class="crystalButton" alt="Blue crystal icon">
-        <img src="assets/images/greengem.png" id="crystal_4" class="crystalButton" alt="Green crystal icon">
-    </div>
-    <div>
-        <h2>Your total score is:</h2>
-        <p id="totalScore"></p>
-    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">&copy; Copyright 2017 James Roth</span>
+        </div>
+    </footer>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </body>
 
